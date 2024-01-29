@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  backend:
+    container_name: webcomponent_asnyc_backend
+    image: backend_mock
+    ports:
+      - 8080:3000
+
+  userComponents:
+    container_name: webcomponent_asnyc_usercomponents
+    image: webc_asnyc_usercomponents
+    ports:
+      - 8081:80
+
+  studentComponents:
+    container_name: webcomponent_asnyc_studentcomponents
+    image: webc_asnyc_studentcomponents
+    ports:
+      - 8082:80
+
+  courseComponents:
+    container_name: webcomponent_asnyc_coursecomponents
+    image: webc_asnyc_coursecomponents
+    ports:
+      - 8083:80
+
+  applicationShell:
+    container_name: webcomponent_asnyc_applicationshell
+    image: webc_asnyc_applicationshell
+    ports:
+      - 3000:80
+    depends_on: [backend, userComponents, studentComponents, courseComponents]

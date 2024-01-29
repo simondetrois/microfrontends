@@ -1,0 +1,12 @@
+zum messen der verschiedenen metriken automatisieren
+- cypress
+- Diagrammtyp har
+- https://www.giacomodebidda.com/posts/generate-and-view-har-files/
+
+- first paint
+- sum content loaded
+- react rauskürzen
+
+wichtig:
+- wie entwickeln sich die einzelnen frameworks in Zukunft
+- Javascript Ökosystem näher betrachten

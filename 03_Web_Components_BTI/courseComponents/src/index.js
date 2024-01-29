@@ -1,0 +1,5 @@
+import "./BaseDataCourse"
+import "./CourseDetails"
+import "./CoursesStudentsTable"
+import "./CourseTable"
+import "./GradeOverviewCourse"

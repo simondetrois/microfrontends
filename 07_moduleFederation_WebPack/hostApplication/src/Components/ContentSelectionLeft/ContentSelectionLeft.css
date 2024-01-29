@@ -1,0 +1,27 @@
+.left_content_selection_container {
+  display: flex;
+  flex-basis: 100%;
+  border-radius: 10px;
+  background-color: var(--elementBody);
+  flex-direction: column;
+}
+
+.left_content_selection_header {
+  display: flex;
+  background-color: var(--blueGrey);
+  height: fit-content;
+  padding: 7px;
+  border-radius: 10px;
+  justify-content: center;
+  color: var(--fontLight);
+}
+
+.left_selection_item {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.left_selection_item:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  backend:
+    container_name: modf_backend
+    image: backend_mock
+    ports:
+      - 8080:3000
+
+  moduleFederationRemoteUser:
+    container_name: modf_remote_user
+    image: modf_remote_user
+    ports:
+      - 3001:80
+    depends_on:
+      - backend
+
+  moduleFederationRemoteStudent:
+    container_name: modf_remote_student
+    image: modf_remote_student
+    ports:
+      - 3002:80
+    depends_on:
+      - backend
+
+  moduleFederationRemoteCourse:
+    container_name: modf_remote_course
+    image: modf_remote_course
+    ports:
+      - 3003:80
+    depends_on:
+      - backend
+
+  moduleFederationHost:
+    container_name: modf_host
+    image: modf_host
+    ports:
+      - 3000:80
+    depends_on:
+      - backend
+      - moduleFederationRemoteUser
+      - moduleFederationRemoteStudent
+      - moduleFederationRemoteCourse

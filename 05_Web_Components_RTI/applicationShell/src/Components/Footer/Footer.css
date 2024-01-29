@@ -1,0 +1,10 @@
+.footer {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--headerAndFooter);
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+}

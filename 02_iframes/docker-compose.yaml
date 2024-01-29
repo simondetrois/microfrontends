@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  backend:
+    container_name: iframe_backend
+    image: backend_mock
+    ports:
+      - 8080:3000
+
+  iframeProfile:
+    container_name: iframe_profile
+    image: iframe_profile
+    ports:
+      - 3001:80
+
+  iframeStudentTable:
+    container_name: iframe_studenttable
+    image: iframe_studenttable
+    ports:
+      - 3002:80
+
+  iframeCourseTable:
+    container_name: iframe_coursetable
+    image: iframe_coursetable
+    ports:
+      - 3003:80
+
+  iframeStudentDetails:
+    container_name: iframe_studentdetails
+    image: iframe_studentdetails
+    ports:
+      - 3004:80
+
+  iframeCourseDetails:
+    container_name: iframe_coursedetails
+    image: iframe_coursedetails
+    ports:
+      - 3005:80
+
+  iframeApplicationShell:
+    container_name: iframe_applicationshell
+    image: iframe_applicationshell
+    ports:
+      - 3000:80
+    depends_on:
+      - backend
+      - iframeProfile
+      - iframeStudentTable
+      - iframeCourseTable
+      - iframeStudentDetails
+      - iframeCourseDetails
+

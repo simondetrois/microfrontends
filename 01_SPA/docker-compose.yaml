@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  backend:
+    container_name: spa_backend
+    image: backend_mock
+    ports:
+      - 8080:3000
+
+  frontend:
+    container_name: spa
+    image: spa
+    ports:
+      - 3000:80
+    depends_on:
+      - backend

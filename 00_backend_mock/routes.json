@@ -1,0 +1,8 @@
+{
+  "/student-api/students/": "/students",
+  "/student-api/student/:studentId": "/:studentId",
+  "/course-api/courses": "/courses",
+  "/course-api/grades/:courseId": "/:courseId",
+  "/user-api/user": "/user",
+  "/user-api/notifications/:userId": "/:userId"
+}

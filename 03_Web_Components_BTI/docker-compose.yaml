@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  backend:
+    container_name: webcomponent_npm_backend
+    image: backend_mock
+    ports:
+      - 8080:3000
+
+  frontend:
+    container_name: webcomponent_npm
+    image: webcnpm
+    ports:
+      - 3000:80
+    depends_on:
+      - backend

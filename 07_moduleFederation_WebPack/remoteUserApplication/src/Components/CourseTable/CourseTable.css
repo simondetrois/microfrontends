@@ -1,0 +1,79 @@
+.course_table_container {
+  display: flex;
+  flex-direction: column;
+  overflow: overlay;
+  height: 100%;
+}
+
+.course_table_header_row {
+  display: flex;
+  padding: 5px;
+  background-color: var(--elementHeaderAndFooter);
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 0 0px 10px 10px;
+}
+
+.course_table_header_column {
+  flex: 1;
+  color: var(--fontLight);
+}
+
+.course_table_content {
+  flex: 1;
+  overflow: overlay;
+  background-color: var(--elementBody);
+
+  scrollbar-gutter: stable;
+}
+
+.course_table_row {
+  display: flex;
+  padding: 5px;
+  background-color: var(--elementBody);
+  border-bottom: 1px solid var(--tableLine);
+}
+
+.course_table_row:hover {
+  background-color: var(--tableHover);
+}
+
+.course_table_column {
+  flex-basis: 33.5%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  overflow: hidden;
+}
+
+.course_table_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: var(--elementHeaderAndFooter);
+  min-height: 21px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  color: var(--fontLight);
+}
+
+.course_table_pagination_container {
+  display: flex;
+  align-items: center;
+}
+
+.course_table_pagination_element {
+  padding-right: 5px;
+}
+
+.course_table_pagination_element:hover {
+  cursor: pointer;
+}
+
+.course_table_page_switcher {
+  font-size: 1.2em;
+}
+
+.pageSwitcher:hover {
+  cursor: pointer;
+}

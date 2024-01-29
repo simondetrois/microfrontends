@@ -1,0 +1,28 @@
+.center_content_selection_container {
+  display: flex;
+  flex-basis: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 10px;
+  flex-direction: column;
+}
+
+.center_content_selection_header {
+  display: flex;
+  padding: 7px;
+  font-size: 17px;
+  background-color: var(--elementHeaderAndFooter);
+  flex-shrink: 0;
+  flex-grow: 0;
+  color: var(--fontLight);
+}
+
+.center_selection_item {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.center_selection_item:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.home_container {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.home_middleContainer {
+  display: flex;
+  flex-basis: 60%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.home_outerContainer {
+  display: flex;
+  flex-basis: 20%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+}
